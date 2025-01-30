@@ -1,3 +1,4 @@
+function role () {
 let role = prompt('role');
    let message = "";
     if (role === 'Employee') {
@@ -11,4 +12,6 @@ let role = prompt('role');
 } else {
     message = 'Invalid role';
 }
-document.getElementById('message').innerHTML = message;
+return message;
+}
+document.getElementById('message').innerHTML = role();
